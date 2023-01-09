@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='utf-8'?>
+<docRoot>
+  <fapiMsg>
+    <MSG_PHY_DL_TTI_REQ>
+      <PDU type="PDSCH">
+        <pduBitmap>0</pduBitmap>
+        <rnti>4023</rnti>
+        <pduIndex>0</pduIndex>
+        <bwpSize>273</bwpSize>
+        <bwpStart>0</bwpStart>
+        <subcarrierSpacing>1</subcarrierSpacing>
+        <cyclicPrefix>0</cyclicPrefix>
+        <nrOfCodewords>1</nrOfCodewords>
+        <ForEach count="nrOfCodewords">
+          <targetCodeRate>0</targetCodeRate>
+          <qamModOrder>6</qamModOrder>
+          <mcsIndex>11</mcsIndex>
+          <mcsTable>1</mcsTable>
+          <rvIndex>0</rvIndex>
+          <tbSize>28185</tbSize>
+        </ForEach>
+        <nIdPdsch>11</nIdPdsch>
+        <nrOfLayers>4</nrOfLayers>
+        <transmissionScheme>0</transmissionScheme>
+        <refPoint>0</refPoint>
+        <dlDmrsSymbPos>4</dlDmrsSymbPos>
+        <dmrsConfigType>0</dmrsConfigType>
+        <pdschDmrsScramblingId>0</pdschDmrsScramblingId>
+        <pdschDmrsScramblingIdComplement>0</pdschDmrsScramblingIdComplement>
+        <lowPaprDmrs>0</lowPaprDmrs>
+        <nSCID>0</nSCID>
+        <numDmrsCdmGrpsNoData>2</numDmrsCdmGrpsNoData>
+        <dmrsPorts>0</dmrsPorts>
+        <resourceAlloc>1</resourceAlloc>
+        <rbBitmap>0,0,0</rbBitmap>
+        <rbStart>128</rbStart>
+        <rbSize>144</rbSize>
+        <vrbToPrbMapping>0</vrbToPrbMapping>
+        <startSymbolIndex>1</startSymbolIndex>
+        <nrOfSymbols>13</nrOfSymbols>
+        <powerControlOffsetProfileNR>0</powerControlOffsetProfileNR>
+        <powerControlOffsetSSProfileNR>0</powerControlOffsetSSProfileNR>
+        <pdschMaintenanceFapiV3>
+          <pdschTransType>0</pdschTransType>
+          <coresetStartPoint>0</coresetStartPoint>
+          <initialDlBwpSize>273</initialDlBwpSize>
+          <ldpcBaseGraph>0</ldpcBaseGraph>
+          <tbSizeLbrmBytes>0</tbSizeLbrmBytes>
+          <tbCrcRequired>0</tbCrcRequired>
+          <ssbPdusForRateMatching>0</ssbPdusForRateMatching>
+          <ssbConfigForRateMatching>0</ssbConfigForRateMatching>
+          <prbSymRmPatternBitmapSizeByReference>0</prbSymRmPatternBitmapSizeByReference>
+          <prbSymRateMatchPatternBitmapByReference>0</prbSymRateMatchPatternBitmapByReference>
+          <numPrbSymRmPatternsByValue>0</numPrbSymRmPatternsByValue>
+          <ForEach count="numPrbSymRmPatternsByValue">
+            <freqDomainRB>0</freqDomainRB>
+            <symbolsInRB>0</symbolsInRB>
+          </ForEach>
+          <numCoresetRmPatterns>0</numCoresetRmPatterns>
+          <ForEach count="numCoresetRmPatterns">
+            <freqDomainResources>0</freqDomainResources>
+            <symbolsPattern>0</symbolsPattern>
+          </ForEach>
+          <pdcchPduIndex>0</pdcchPduIndex>
+          <dciIndex>0</dciIndex>
+          <lteCrsRateMatchPatternBitmapSize>0</lteCrsRateMatchPatternBitmapSize>
+          <lteCrsRateMatchPattern>0</lteCrsRateMatchPattern>
+          <numCsiRsForRateMatching>0</numCsiRsForRateMatching>
+          <csiRsForRateMatching>0</csiRsForRateMatching>
+          <pdschDmrsPowerOffsetProfileSSS>0</pdschDmrsPowerOffsetProfileSSS>
+          <pdschDataPowerOffsetProfileSSS>0</pdschDataPowerOffsetProfileSSS>
+        </pdschMaintenanceFapiV3>
+        <pdschPtrsMaintenanceFapiV3>
+          <pdschPtrsPowerOffsetProfileSSS>0</pdschPtrsPowerOffsetProfileSSS>
+        </pdschPtrsMaintenanceFapiV3>
+        <pdschParametersRel16FapiV3>
+          <repetitionScheme>0</repetitionScheme>
+        </pdschParametersRel16FapiV3>
+        <pdschParametersFapiV4>
+          <coresetRmPatternBitmapSizeByReference>0</coresetRmPatternBitmapSizeByReference>
+          <coresetRmPatternBitmapByReference>0,0</coresetRmPatternBitmapByReference>
+          <lteCrsMbsfnDerivationMethod>0</lteCrsMbsfnDerivationMethod>
+          <lteCrsMbsfnPattern>0,0</lteCrsMbsfnPattern>
+          <spatialStreamIndicesPresent>0</spatialStreamIndicesPresent>
+          <ForEach count="codeword">
+            <numLayersForCW>0</numLayersForCW>
+            <spatialStreamIndicesForCW>0,0</spatialStreamIndicesForCW>
+          </ForEach>
+        </pdschParametersFapiV4>
+      </PDU>
+    </MSG_PHY_DL_TTI_REQ>
+  </fapiMsg>
+  <fapiMsg>
+    <MSG_PHY_TX_DATA_REQ>
+      <PDU type="TXDATA">
+        <pduIndex>0</pduIndex>
+        <cwIndex>0</cwIndex>
+        <numTLV>1</numTLV>
+        <ForEach count="numTLV">
+          <tag>1</tag>
+          <length>28185</length>
+          <value>txdata0.dat</value>
+        </ForEach>
+      </PDU>
+    </MSG_PHY_TX_DATA_REQ>
+  </fapiMsg>
+  <fapiMsg>
+    <MSG_PHY_UL_TTI_REQ>
+    </MSG_PHY_UL_TTI_REQ>
+  </fapiMsg>
+</docRoot>

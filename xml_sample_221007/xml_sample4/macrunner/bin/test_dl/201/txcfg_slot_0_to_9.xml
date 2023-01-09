@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<docRoot>
+  <fapiMsg>
+    <MSG_PHY_DL_TTI_REQ>
+    </MSG_PHY_DL_TTI_REQ>
+  </fapiMsg>
+  <fapiMsg>
+    <MSG_PHY_UL_TTI_REQ>
+    </MSG_PHY_UL_TTI_REQ>
+  </fapiMsg>
+</docRoot>

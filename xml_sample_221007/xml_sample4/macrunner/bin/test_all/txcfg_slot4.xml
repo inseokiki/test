@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='utf-8'?>
+<docRoot>
+  <fapiMsg>
+    <MSG_PHY_DL_TTI_REQ>
+    </MSG_PHY_DL_TTI_REQ>
+  </fapiMsg>
+  <fapiMsg>
+    <MSG_PHY_UL_TTI_REQ>
+      <PDU type="PRACH">
+        <physCellID>50</physCellID>
+        <numPrachOcas>1</numPrachOcas>
+        <prachFormat>8</prachFormat>
+        <indexFdRa>0</indexFdRa>
+        <prachStartSymbol>0</prachStartSymbol>
+        <numCs>0</numCs>
+        <isMsgAPrach>0</isMsgAPrach>
+        <hasMsgAPuschBeamforming>0</hasMsgAPuschBeamforming>
+        <rxBeamforming>
+          <trpScheme>0</trpScheme>
+          <numPRGs>1</numPRGs>
+          <prgSize>0</prgSize>
+          <digBFInterface>1</digBFInterface>
+          <ForEach count="numPRGs">
+            <ForEach count="digBFInterface">
+              <beamIdx>0</beamIdx>
+            </ForEach>
+          </ForEach>
+        </rxBeamforming>
+        <prachMaintenanceFapiV3>
+          <handle>0</handle>
+          <prachConfigScope>0</prachConfigScope>
+          <prachResConfigIndex>50</prachResConfigIndex>
+          <numFdRa>0</numFdRa>
+          <startPreambleIndex>0</startPreambleIndex>
+          <numPreambleIndices>0</numPreambleIndices>
+        </prachMaintenanceFapiV3>
+        <uplinkSpatialStreamAssignmentFapiV4>
+          <numSpatialStreams>2</numSpatialStreams>
+          <spatialStreamIndices>0,1</spatialStreamIndices>
+        </uplinkSpatialStreamAssignmentFapiV4>
+        <msgAPrachToMsgAPuschMapFapiV4 condition="isMsgAPrach=1">
+          <preambleGroups>1</preambleGroups>
+          <dmrsPorts>0,0</dmrsPorts>
+          <availableDmrsSequenceIds>0,0</availableDmrsSequenceIds>
+          <numPuschOcasFd>0,0</numPuschOcasFd>
+          <numPuschOcasTd>0,0</numPuschOcasTd>
+          <numPuschOcasSlots>0,0</numPuschOcasSlots>
+          <msgAPUSCHTimeDomainOffset>0,0</msgAPUSCHTimeDomainOffset>
+          <nPreambles>0,0</nPreambles>
+          <msgAPrachToPruDmrsMapping>
+            <ForEach count="prachFdMax">
+              <ForEach count="prachTd2">
+                <validRO>0</validRO>
+                <catAorBBitmap>0</catAorBBitmap>
+                <ForEach count="grpCount">
+                  <pruPreambleIndexForStartPreambleIndex>0</pruPreambleIndexForStartPreambleIndex>
+                  <numPuschAssocDmrsOccasionsForThisPrachRO>0</numPuschAssocDmrsOccasionsForThisPrachRO>
+                  <msgAPuschAssocDmrsOccasion>0,0</msgAPuschAssocDmrsOccasion>
+                </ForEach>
+              </ForEach>
+            </ForEach>
+          </msgAPrachToPruDmrsMapping>
+        </msgAPrachToMsgAPuschMapFapiV4>
+        <msgAPuschBeamforning condition="isMsgAPrach=1" and_condition="hasMsgAPuschBeamforming=1">
+          <trpScheme>0</trpScheme>
+          <numPRGs>1</numPRGs>
+          <prgSize>0</prgSize>
+          <digBFInterface>1</digBFInterface>
+          <ForEach count="numPRGs">
+            <ForEach count="digBFInterface">
+              <beamIdx>0</beamIdx>
+            </ForEach>
+          </ForEach>
+        </msgAPuschBeamforning>
+      </PDU>
+      <PDU type="PUSCH">
+        <pduBitmap>1</pduBitmap>
+        <rnti>100</rnti>
+        <handle>0</handle>
+        <bwpSize>273</bwpSize>
+        <bwpStart>0</bwpStart>
+        <subcarrierSpacing>1</subcarrierSpacing>
+        <cyclicPrefix>0</cyclicPrefix>
+        <targetCodeRate>0</targetCodeRate>
+        <qamModOrder>0</qamModOrder>
+        <mcsIndex>0</mcsIndex>
+        <mcsTable>0</mcsTable>
+        <transformPrecoding>0</transformPrecoding>
+        <nIdPusch>0</nIdPusch>
+        <nrOfLayers>0</nrOfLayers>
+        <ulDmrsSymbPos>0</ulDmrsSymbPos>
+        <dmrsConfigType>0</dmrsConfigType>
+        <puschDmrsScramblingId>0</puschDmrsScramblingId>
+        <puschDmrsScramblingIdComplement>0</puschDmrsScramblingIdComplement>
+        <lowPaprDmrs>0</lowPaprDmrs>
+        <puschDmrsIdentity>0</puschDmrsIdentity>
+        <nSCID>0</nSCID>
+        <numDmrsCdmGrpsNoData>0</numDmrsCdmGrpsNoData>
+        <dmrsPorts>0</dmrsPorts>
+        <resourceAlloc>0</resourceAlloc>
+        <rbBitmap>0,0</rbBitmap>
+        <rbStart>13</rbStart>
+        <rbSize>1</rbSize>
+        <vrbToPrbMapping>0</vrbToPrbMapping>
+        <intraSlotFrequencyHopping>0</intraSlotFrequencyHopping>
+        <txDirectCurrentLocation>0</txDirectCurrentLocation>
+        <uplinkFrequencyShift7p5khz>0</uplinkFrequencyShift7p5khz>
+        <startSymbolIndex>0</startSymbolIndex>
+        <nrOfSymbols>13</nrOfSymbols>
+        <puschData condition="pduBitmapBit0=1">
+          <rvIndex>0</rvIndex>
+          <harqProcessID>0</harqProcessID>
+          <newData>1</newData>
+          <tbSize>10</tbSize>
+          <numCb>0</numCb>
+          <cbPresentAndPosition>0,0</cbPresentAndPosition>
+        </puschData>
+        <puschUci condition="pduBitmapBit1=1">
+          <harqAckBitLength>0</harqAckBitLength>
+          <csiPart1BitLength>0</csiPart1BitLength>
+          <flagCsiPart2>0</flagCsiPart2>
+          <alphaScaling>0</alphaScaling>
+          <betaOffsetHarqAck>0</betaOffsetHarqAck>
+          <betaOffsetCsi1>0</betaOffsetCsi1>
+          <betaOffsetCsi2>0</betaOffsetCsi2>
+        </puschUci>
+        <puschPtrs condition="pduBitmapBit2=1">
+          <numPtrsPorts>0</numPtrsPorts>
+          <ForEach count="numPtrsPorts">
+            <ptrsPortIndex>0</ptrsPortIndex>
+            <ptrsDmrsPort>0</ptrsDmrsPort>
+            <ptrsReOffset>0</ptrsReOffset>
+          </ForEach>
+          <ptrsTimeDensity>0</ptrsTimeDensity>
+          <ptrsFreqDensity>0</ptrsFreqDensity>
+          <ulPTRSPower>0</ulPTRSPower>
+        </puschPtrs>
+        <dftsOfdm condition="pduBitmapBit3=1">
+          <lowPaprGroupNumber>0</lowPaprGroupNumber>
+          <lowPaprSequenceNumber>0</lowPaprSequenceNumber>
+          <ulPtrsSampleDensity>0</ulPtrsSampleDensity>
+          <ulPtrsTimeDensityTransformPrecoding>0</ulPtrsTimeDensityTransformPrecoding>
+        </dftsOfdm>
+        <rxBeamforming>
+          <trpScheme>0</trpScheme>
+          <numPRGs>1</numPRGs>
+          <prgSize>0</prgSize>
+          <digBFInterface>1</digBFInterface>
+          <ForEach count="numPRGs">
+            <ForEach count="digBFInterface">
+              <beamIdx>0</beamIdx>
+            </ForEach>
+          </ForEach>
+        </rxBeamforming>
+        <puschMaintenanceFapiV3>
+          <puschTransType>0</puschTransType>
+          <deltaBwp0StartFromActiveBwp>0</deltaBwp0StartFromActiveBwp>
+          <initialUlBwpSize>0</initialUlBwpSize>
+          <groupOrSequenceHopping>0</groupOrSequenceHopping>
+          <puschSecondHopPRB>0</puschSecondHopPRB>
+          <ldpcBaseGraph>0</ldpcBaseGraph>
+          <tbSizeLbrmBytes>0</tbSizeLbrmBytes>
+        </puschMaintenanceFapiV3>
+        <puschParametersFapiV4>
+          <cbCrsStatusRequest>0</cbCrsStatusRequest>
+          <srsTxPorts>0</srsTxPorts>
+          <ulTpmiIndex>0</ulTpmiIndex>
+          <numULSpatialStreamPorts>0</numULSpatialStreamPorts>
+          <ulSpatialStreamPorts>0,0</ulSpatialStreamPorts>
+        </puschParametersFapiV4>
+        <puschUciFapiV3 condition="pduBitmapBit1=1">
+          <numPart2s>0</numPart2s>
+          <ForEach count="numPart2s">
+            <priority>0</priority>
+            <numPart1Params>0</numPart1Params>
+            <paramOffsets>0,0</paramOffsets>
+            <paramSizes>0,0</paramSizes>
+            <part2SizeMapIndex>0</part2SizeMapIndex>
+            <part2SizeMapScope>0</part2SizeMapScope>
+          </ForEach>
+        </puschUciFapiV3>
+      </PDU>
+      <PDU type="PUCCH">
+        <rnti>100</rnti> 
+        <handle>0</handle>
+        <bwpSize>273</bwpSize>
+        <bwpStart>0</bwpStart>
+        <subcarrierSpacing>1</subcarrierSpacing>
+        <cyclicPrefix>0</cyclicPrefix>
+        <formatType>0</formatType>
+        <multiSlotTxIndicator>0</multiSlotTxIndicator>
+        <pi2Bpsk>0</pi2Bpsk>
+        <prbStart>12</prbStart>
+        <prbSize>1</prbSize>
+        <startSymbolIndex>13</startSymbolIndex>
+        <nrOfSymbols>1</nrOfSymbols>
+        <intraSlotFrequencyHopping>0</intraSlotFrequencyHopping>
+        <secondHopPRB>0</secondHopPRB>
+        <pucchGroupHopping>0</pucchGroupHopping>
+        <obsolete8bit>0</obsolete8bit>
+        <nIdPucchHopping>0</nIdPucchHopping>
+        <initialCyclicShift>0</initialCyclicShift>
+        <nIdPucchScrambling>0</nIdPucchScrambling>
+        <timeDomainOccIdx>0</timeDomainOccIdx>
+        <preDftOccIdx>0</preDftOccIdx>
+        <preDftOccLen>0</preDftOccLen>
+        <addDmrsFlag>0</addDmrsFlag>
+        <nId0PucchDmrsScrambling>0</nId0PucchDmrsScrambling>
+        <m0PucchDmrsCyclicShift>0</m0PucchDmrsCyclicShift>
+        <srBitLen>1</srBitLen>
+        <bitLenHarq>1</bitLenHarq>
+        <csiPart1BitLength>0</csiPart1BitLength>     
+        <rxBeamforming>
+          <trpScheme>0</trpScheme>
+          <numPRGs>1</numPRGs>
+          <prgSize>0</prgSize>
+          <digBFInterface>1</digBFInterface>
+          <ForEach count="numPRGs">
+            <ForEach count="digBFInterface">
+              <beamIdx>0</beamIdx>
+            </ForEach>
+          </ForEach>
+        </rxBeamforming>
+        <pucchMaintenanceFapiV3>
+          <maxCodeRate>0</maxCodeRate>     
+          <ulBwpId>0</ulBwpId>     
+        </pucchMaintenanceFapiV3>
+        <uciPart1ToPart2CorrespondenceFapiV3>
+          <numPart2s>0</numPart2s>     
+          <ForEach count="numPart2s">
+            <priority>0</priority>
+            <numPart1Params>0</numPart1Params>
+            <paramOffsets>0,0</paramOffsets>
+            <paramSizes>0,0</paramSizes>
+            <part2SizeMapIndex>0</part2SizeMapIndex>
+            <part2SizeMapScope>0</part2SizeMapScope>
+          </ForEach>
+        </uciPart1ToPart2CorrespondenceFapiV3>
+      </PDU>
+      <PDU type="SRS">
+        <rnti>100</rnti>
+        <handle>0</handle>
+        <bwpSize>273</bwpSize>
+        <bwpStart>0</bwpStart>
+        <subcarrierSpacing>1</subcarrierSpacing>
+        <cyclicPrefix>0</cyclicPrefix>
+        <numAntPorts>0</numAntPorts>
+        <numSymbols>1</numSymbols>
+        <numRepetitions>0</numRepetitions>
+        <timeStartPosition>13</timeStartPosition>
+        <configIndex>0</configIndex>
+        <sequenceId>0</sequenceId>
+        <bandwidthIndex>0</bandwidthIndex>
+        <combSize>0</combSize>
+        <combOffset>0</combOffset>
+        <cyclicShift>0</cyclicShift>
+        <frequencyPosition>0</frequencyPosition>
+        <frequencyShift>0</frequencyShift>
+        <frequencyHopping>0</frequencyHopping>
+        <groupOrSequenceHopping>0</groupOrSequenceHopping>
+        <resourceType>0</resourceType>
+        <tSrs>0</tSrs>
+        <tOffset>0</tOffset>
+        <rxBeamforming>
+          <trpScheme>0</trpScheme>
+          <numPRGs>1</numPRGs>
+          <prgSize>0</prgSize>
+          <digBFInterface>1</digBFInterface>
+          <ForEach count="numPRGs">
+            <ForEach count="digBFInterface">
+              <beamIdx>0</beamIdx>
+            </ForEach>
+          </ForEach>
+        </rxBeamforming>
+        <srsParametersFapiV4>
+          <srsBandwidthSize>0</srsBandwidthSize>
+          <ForEach count="numSymbols">
+            <srsBandwidthStart>0</srsBandwidthStart>
+            <sequenceGroup>0</sequenceGroup>
+            <sequenceNumber>0</sequenceNumber>
+          </ForEach>
+          <usage>0</usage>
+          <reportType>0,0,0,0,0</reportType>
+          <singularValueRepresentation>0</singularValueRepresentation>
+          <iqRepresentation>0</iqRepresentation>
+          <prgSize>0</prgSize>
+          <numTotalUeAntennas>0</numTotalUeAntennas>
+          <ueAntennasInThisSrsResourceSet>0</ueAntennasInThisSrsResourceSet>
+          <sampledUeAntennas>0</sampledUeAntennas>
+          <reportScope>0</reportScope>
+          <numULSpatialStreamsPorts>2</numULSpatialStreamsPorts>
+          <ulSpatialStreamPorts>0,1</ulSpatialStreamPorts>
+        </srsParametersFapiV4>
+      </PDU>
+      <PDU type="MSGA_PUSCH">
+        <pduBitmap>0</pduBitmap>
+        <prachToPruMapType>0</prachToPruMapType>
+        <prachToPruMapIndicator>0</prachToPruMapIndicator>
+        <msgAprachSfn>0</msgAprachSfn>
+        <msgAprachSlot>0</msgAprachSlot>
+        <handle>0</handle>
+        <bwpSize>273</bwpSize>
+        <bwpStart>0</bwpStart>
+        <subcarrierSpacing>1</subcarrierSpacing>
+        <cyclicPrefix>0</cyclicPrefix>
+        <msgAmcs>0</msgAmcs>
+        <transformPrecoding>0</transformPrecoding>
+        <nIdMsgAPusch>0</nIdMsgAPusch>
+        <puschDmrsScramblingId>0,0</puschDmrsScramblingId>
+        <ulDmrsSymbPos>0</ulDmrsSymbPos>
+        <dmrsMappingType>0</dmrsMappingType>
+        <startRbPuschOcas>0</startRbPuschOcas>
+        <numRbPUschOcas>0</numRbPUschOcas>
+        <guardBand>0</guardBand>
+        <intraSlotFrequencyHopping>0</intraSlotFrequencyHopping>
+        <intraSlotFrequencyHoppingBits>0</intraSlotFrequencyHoppingBits>
+        <txDirectCurrentLocation>0</txDirectCurrentLocation>
+        <uplinkFrequencyShift7p5khz>0</uplinkFrequencyShift7p5khz>
+        <startSymbolIdPuschOcas>0</startSymbolIdPuschOcas>
+        <durationPuschOcas>0</durationPuschOcas>
+        <guardPeriod>0</guardPeriod>
+        <tbSize>10</tbSize>
+      </PDU>
+    </MSG_PHY_UL_TTI_REQ>
+  </fapiMsg>
+</docRoot>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<docRoot>
+  <fapiMsg>
+    <MSG_PHY_DL_TTI_REQ>
+    </MSG_PHY_DL_TTI_REQ>
+  </fapiMsg>
+  <fapiMsg>
+    <MSG_PHY_UL_TTI_REQ>
+      <PDU type="PRACH">
+        <physCellID>100</physCellID>
+        <numPrachOcas>1</numPrachOcas>
+        <prachFormat>7</prachFormat>
+        <indexFdRa>0</indexFdRa>
+        <prachStartSymbol>0</prachStartSymbol>
+        <numCs>0</numCs>
+        <isMsgAPrach>0</isMsgAPrach>
+        <hasMsgAPuschBeamforming>0</hasMsgAPuschBeamforming>
+        <prachMaintenanceFapiV3>
+          <handle>0</handle>
+          <prachConfigScope>0</prachConfigScope>
+          <prachResConfigIndex>50</prachResConfigIndex>
+          <numFdRa>0</numFdRa>
+          <startPreambleIndex>0</startPreambleIndex>
+          <numPreambleIndices>0</numPreambleIndices>
+        </prachMaintenanceFapiV3>
+        <uplinkSpatialStreamAssignmentFapiV4>
+          <numSpatialStreams>0</numSpatialStreams>
+          <spatialStreamIndices>0,1</spatialStreamIndices>
+        </uplinkSpatialStreamAssignmentFapiV4>
+      </PDU>
+    </MSG_PHY_UL_TTI_REQ>
+  </fapiMsg>
+</docRoot>

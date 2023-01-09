@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<docRoot>
+  <fapiMsg>
+    <MSG_PHY_DL_TTI_REQ>
+      <PDU type="PDCCH">
+        <coresetBWPSize>267</coresetBWPSize>
+        <coresetBWPStart>6</coresetBWPStart>
+        <subcarrierSpacing>1</subcarrierSpacing>
+        <cyclicPrefix>0</cyclicPrefix>
+        <startSymbolIndex>0</startSymbolIndex>
+        <durationSymbols>1</durationSymbols>
+        <freqDomainResource>0xFF,0xFF,0x00,0x00,0x00,0x00,0x00</freqDomainResource>
+        <cceRegMappingType>0</cceRegMappingType>
+        <regBundleSize>2</regBundleSize>
+        <interleaverSize>2</interleaverSize>
+        <coreSetType>1</coreSetType>
+        <shiftIndex>0</shiftIndex>
+        <precoderGranularity>0</precoderGranularity>
+        <numDlDci>1</numDlDci>
+        <ForEach count="numDlDci">
+          <rnti>4020</rnti>
+          <nIdPdcchData>11</nIdPdcchData>
+          <nRntiPdcchData>4020</nRntiPdcchData>
+          <cceIndex>6</cceIndex>
+          <aggregationLevel>2</aggregationLevel>
+          <beta_PDCCH_1_0>0</beta_PDCCH_1_0>
+          <powerControlOffsetSSProfileNR>0</powerControlOffsetSSProfileNR>
+          <payloadSizeBits>44</payloadSizeBits>
+          <payload>0x03,0x06,0x09,0x0C,0x0F,0x00</payload>
+        </ForEach>
+        <pdcchMaintenanceFapiV3>
+          <pdcchPduIndex>0</pdcchPduIndex>
+          <ForEach count="numDlDci">
+            <dciIndex>0</dciIndex>
+            <collocatedAl16Candidate>0</collocatedAl16Candidate>
+            <pdcchDmrsPowerOffsetProfileSSS>0</pdcchDmrsPowerOffsetProfileSSS>
+            <pdcchDataPowerOffsetProfileSSS>0</pdcchDataPowerOffsetProfileSSS>
+          </ForEach>
+        </pdcchMaintenanceFapiV3>
+        <pdcchParametersFapiV4>
+          <ForEach count="numDlDci">
+            <nIdPdcchDmrs>11</nIdPdcchDmrs>
+          </ForEach>
+          <spatialStreamIndicesPresent>0</spatialStreamIndicesPresent>
+          <ForEach count="numDlDci" condition="spatialStreamIndicesPresent=1">
+            <dciIndex>0</dciIndex>
+            <spatialStreamIndex>0</spatialStreamIndex>
+          </ForEach>
+        </pdcchParametersFapiV4>
+      </PDU>
+    </MSG_PHY_DL_TTI_REQ>
+  </fapiMsg>
+  <fapiMsg>
+    <MSG_PHY_UL_TTI_REQ>
+    </MSG_PHY_UL_TTI_REQ>
+  </fapiMsg>
+</docRoot>

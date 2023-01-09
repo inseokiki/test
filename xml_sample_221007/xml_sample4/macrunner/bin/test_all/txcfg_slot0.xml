@@ -1,0 +1,462 @@
+<?xml version='1.0' encoding='utf-8'?>
+<docRoot>
+  <fapiMsg>
+    <MSG_PHY_DL_TTI_REQ>
+      <PDU type="SSB">
+        <physCellId>0</physCellId>
+        <betaPssProfileNR>0</betaPssProfileNR>
+        <ssbBlockIndex>0</ssbBlockIndex>
+        <ssbSubcarrierOffset>0</ssbSubcarrierOffset>
+        <ssbOffsetPointA>0</ssbOffsetPointA>
+        <bchPayloadFlag>1</bchPayloadFlag>
+        <macGenMibPdu condition="bchPayloadFlag=0" or_condition="bchPayloadFlag=1">
+          <bchPayload>0x12345678</bchPayload>
+        </macGenMibPdu>
+        <phyGenMibPdu condition="bchPayloadFlag=2">
+          <dmrsTypeAPosition>0</dmrsTypeAPosition>
+          <pdcchConfigSib1>0</pdcchConfigSib1>
+          <cellBarred>0</cellBarred>
+          <intraFreqReselection>0</intraFreqReselection>
+        </phyGenMibPdu>
+        <PrecodingAndBeamforming condition="phyRel16Support=0">
+          <trpScheme>0</trpScheme>
+          <numPRGs>1</numPRGs>
+          <prgSize>0</prgSize>
+          <digBFInterfaces>1</digBFInterfaces>
+          <ForEach count="numPRGs">
+            <pmIdx>2</pmIdx>
+            <ForEach count="digBFInterfaces">
+              <beamIdx>0</beamIdx> 
+            </ForEach>
+          </ForEach>
+        </PrecodingAndBeamforming>
+        <PrecodingAndBeamformingRel16 condition="phyRel16Support=1">
+          <trpScheme>1</trpScheme>
+          <numPRGs>1</numPRGs>
+          <prgSize>0</prgSize>
+          <digBFInterfaces>1,1</digBFInterfaces>
+          <ForEach count="numPRGs">
+            <layers>2</layers>
+            <pmIdx>2,2</pmIdx>
+            <ForEach count="numTrp">
+              <ForEach count="digBFInterfaces">
+                <beamIdx>0</beamIdx>
+                <beamIdx>0</beamIdx>
+              </ForEach>
+            </ForEach>
+          </ForEach>
+        </PrecodingAndBeamformingRel16>
+        <ssbMaintenanceFapiV3>
+          <ssbPduIndex>0</ssbPduIndex>
+          <ssbFirstSymbolMappingCase>0</ssbFirstSymbolMappingCase>
+          <subcarrierSpacing>1</subcarrierSpacing>
+          <lMax>0</lMax>
+          <ssPbchBlockPowerScaling>0</ssPbchBlockPowerScaling>
+          <betaPSSProfileSSS>0</betaPSSProfileSSS>
+        </ssbMaintenanceFapiV3>
+        <ssbParametersFapiV4>
+          <spatialStreamIndexPresent>0</spatialStreamIndexPresent>
+          <spatialStreamIndex>0</spatialStreamIndex>
+        </ssbParametersFapiV4>
+      </PDU>
+      <PDU type="CSIRS">
+        <subcarrierSpacing>1</subcarrierSpacing>
+        <cyclicPrefix>0</cyclicPrefix>
+        <startRB>0</startRB>
+        <nrOfRBs>273</nrOfRBs>
+        <csiType>1</csiType>
+        <row>0</row>
+        <freqDomain>0</freqDomain>
+        <symbL0>0</symbL0>
+        <symbL1>0</symbL1>
+        <cdmType>0</cdmType>
+        <freqDensity>0</freqDensity>
+        <scrambId>0</scrambId>
+        <powerControlOffsetProfileNR>0</powerControlOffsetProfileNR>
+        <powerControlOffsetSSProfileNR>0</powerControlOffsetSSProfileNR>
+        <PrecodingAndBeamforming condition="phyRel16Support=0">
+          <trpScheme>0</trpScheme>
+          <numPRGs>1</numPRGs>
+          <prgSize>0</prgSize>
+          <digBFInterfaces>1</digBFInterfaces>
+          <ForEach count="numPRGs">
+            <pmIdx>2</pmIdx>
+            <ForEach count="digBFInterfaces">
+              <beamIdx>0</beamIdx>
+            </ForEach>
+          </ForEach>
+        </PrecodingAndBeamforming>
+        <PrecodingAndBeamformingRel16 condition="phyRel16Support=1">
+          <trpScheme>1</trpScheme>
+          <numPRGs>1</numPRGs>
+          <prgSize>0</prgSize>
+          <digBFInterfaces>1,1</digBFInterfaces>
+          <ForEach count="numPRGs">
+            <layers>2</layers>
+            <pmIdx>2,2</pmIdx>
+            <ForEach count="numTrp">
+              <ForEach count="digBFInterfaces">
+                <beamIdx>0</beamIdx>
+                <beamIdx>0</beamIdx>
+              </ForEach>
+            </ForEach>
+          </ForEach>
+        </PrecodingAndBeamformingRel16>
+        <TxGenPrecodingPdu condition="phyFapiV4MuMimoGroupSupport=1">
+          <trpScheme>5</trpScheme>
+          <numMuMimoGroups>1</numMuMimoGroups>
+          <ForEach count="numMuMimoGroups">
+            <muMimoGroupIdx>0</muMimoGroupIdx>
+          </ForEach>
+        </TxGenPrecodingPdu>
+        <csiRsMaintenanceFapiV3>
+          <csiRsPduIndex>0</csiRsPduIndex>
+          <csiRsPowerOffsetProfileSSS>0</csiRsPowerOffsetProfileSSS>
+        </csiRsMaintenanceFapiV3>
+        <csiRsParametersFapiV4>
+          <spatialStreamIndicesPresent>0</spatialStreamIndicesPresent>
+          <spatialStreamIndices>0,0</spatialStreamIndices>
+        </csiRsParametersFapiV4>
+      </PDU>
+      <PDU type="PDCCH">
+        <coresetBWPSize>273</coresetBWPSize>
+        <coresetBWPStart>0</coresetBWPStart>
+        <subcarrierSpacing>1</subcarrierSpacing>
+        <cyclicPrefix>0</cyclicPrefix>
+        <startSymbolIndex>0</startSymbolIndex>
+        <durationSymbols>1</durationSymbols>
+        <freqDomainResource>0,0,0,0,0,0</freqDomainResource>
+        <cceRegMappingType>0</cceRegMappingType>
+        <regBundleSize>0</regBundleSize>
+        <interleaverSize>0</interleaverSize>
+        <coreSetType>0</coreSetType>
+        <shiftIndex>0</shiftIndex>
+        <precoderGranularity>0</precoderGranularity>
+        <numDlDci>1</numDlDci>
+        <ForEach count="numDlDci">
+          <rnti>100</rnti>
+          <nIdPdcchData>0</nIdPdcchData>
+          <nRntiPdcchData>0</nRntiPdcchData>
+          <cceIndex>0</cceIndex>
+          <aggregationLevel>4</aggregationLevel>
+          <PrecodingAndBeamforming condition="phyRel16Support=0">
+            <trpScheme>0</trpScheme>
+            <numPRGs>1</numPRGs>
+            <prgSize>0</prgSize>
+            <digBFInterfaces>1</digBFInterfaces>
+            <ForEach count="numPRGs">
+              <pmIdx>2</pmIdx>
+              <ForEach count="digBFInterfaces">
+                <beamIdx>0</beamIdx>
+              </ForEach>
+            </ForEach>
+          </PrecodingAndBeamforming>
+          <PrecodingAndBeamformingRel16 condition="phyRel16Support=1">
+            <trpScheme>1</trpScheme>
+            <numPRGs>1</numPRGs>
+            <prgSize>0</prgSize>
+            <digBFInterfaces>1</digBFInterfaces>
+            <ForEach count="numPRGs">
+              <layers>2</layers>
+              <pmIdx>2</pmIdx>
+              <ForEach count="trp">
+                <ForEach count="digBFInterfaces">
+                  <beamIdx>0</beamIdx>
+                </ForEach>
+              </ForEach>
+            </ForEach>
+          </PrecodingAndBeamformingRel16>
+          <TxGenPrecodingPdu condition="phyFapiV4MuMimoGroupSupport=1">
+            <trpScheme>0</trpScheme>
+            <numMuMimoGroups>1</numMuMimoGroups>
+            <ForEach count="numMuMimoGroups">
+              <muMimoGroupIdx>0</muMimoGroupIdx>
+            </ForEach>
+          </TxGenPrecodingPdu>
+          <beta_PDCCH_1_0>0</beta_PDCCH_1_0>
+          <powerControlOffsetSSProfileNR>0</powerControlOffsetSSProfileNR>
+          <payloadSizeBits>4</payloadSizeBits>
+          <payload>0x01,0x02,0x03,0x04</payload>
+        </ForEach>
+        <pdcchMaintenanceFapiV3>
+          <pdcchPduIndex>0</pdcchPduIndex>
+          <ForEach count="numDlDci">
+            <dciIndex>0</dciIndex>
+            <collocatedAl16Candidate>0</collocatedAl16Candidate>
+            <pdcchDmrsPowerOffsetProfileSSS>0</pdcchDmrsPowerOffsetProfileSSS>
+            <pdcchDataPowerOffsetProfileSSS>0</pdcchDataPowerOffsetProfileSSS>
+          </ForEach>
+        </pdcchMaintenanceFapiV3>
+        <pdcchParametersFapiV4>
+          <ForEach count="numDlDci">
+            <nIdPdcchDmrs>0</nIdPdcchDmrs>
+          </ForEach>
+          <spatialStreamIndicesPresent>1</spatialStreamIndicesPresent>
+          <ForEach count="numDlDci" condition="spatialStreamIndicesPresent=1">
+            <dciIndex>0</dciIndex>
+            <spatialStreamIndex>0</spatialStreamIndex>
+          </ForEach>
+        </pdcchParametersFapiV4>
+      </PDU>
+      <PDU type="PDSCH">
+        <pduBitmap>0</pduBitmap>
+        <rnti>100</rnti>
+        <pduIndex>0</pduIndex>
+        <bwpSize>273</bwpSize>
+        <bwpStart>0</bwpStart>
+        <subcarrierSpacing>1</subcarrierSpacing>
+        <cyclicPrefix>0</cyclicPrefix>
+        <nrOfCodewords>1</nrOfCodewords>
+        <ForEach count="nrOfCodewords">
+          <targetCodeRate>0</targetCodeRate>
+          <qamModOrder>0</qamModOrder>
+          <mcsIndex>0</mcsIndex>
+          <mcsTable>0</mcsTable>
+          <rvIndex>0</rvIndex>
+          <tbSize>4</tbSize>
+        </ForEach>
+        <nIdPdsch>0</nIdPdsch>
+        <nrOfLayers>1</nrOfLayers>
+        <transmissionScheme>0</transmissionScheme>
+        <refPoint>0</refPoint>
+        <dlDmrsSymbPos>0</dlDmrsSymbPos>
+        <dmrsConfigType>0</dmrsConfigType>
+        <pdschDmrsScramblingId>0</pdschDmrsScramblingId>
+        <pdschDmrsScramblingIdComplement>0</pdschDmrsScramblingIdComplement>
+        <lowPaprDmrs>0</lowPaprDmrs>
+        <nSCID>0</nSCID>
+        <numDmrsCdmGrpsNoData>0</numDmrsCdmGrpsNoData>
+        <dmrsPorts>0</dmrsPorts>
+        <resourceAlloc>0</resourceAlloc>
+        <rbBitmap>0,0,0</rbBitmap>
+        <rbStart>0</rbStart>
+        <rbSize>1</rbSize>
+        <vrbToPrbMapping>0</vrbToPrbMapping>
+        <startSymbolIndex>1</startSymbolIndex>
+        <nrOfSymbols>13</nrOfSymbols>
+        <pdschPtrsParameters condition="pduBitmapBit0=1">
+          <ptrsPortIndex>0</ptrsPortIndex>
+          <ptrsTimeDensity>0</ptrsTimeDensity>
+          <ptrsFreqDensity>0</ptrsFreqDensity>
+          <ptrsReOffset>0</ptrsReOffset>
+          <nEpreRatioOfPDSCHToPTRSProfileNR>0</nEpreRatioOfPDSCHToPTRSProfileNR>
+        </pdschPtrsParameters>
+        <PrecodingAndBeamforming condition="phyRel16Support=0">
+          <trpScheme>0</trpScheme>
+          <numPRGs>1</numPRGs>
+          <prgSize>0</prgSize>
+          <digBFInterfaces>1</digBFInterfaces>
+          <ForEach count="numPRGs">
+            <pmIdx>2</pmIdx>
+            <ForEach count="digBFInterfaces">
+              <beamIdx>0</beamIdx>
+            </ForEach>
+          </ForEach>
+        </PrecodingAndBeamforming>
+        <PrecodingAndBeamformingRel16 condition="phyRel16Support=1">
+          <trpScheme>1</trpScheme>
+          <numPRGs>1</numPRGs>
+          <prgSize>0</prgSize>
+          <digBFInterfaces>1</digBFInterfaces>
+          <ForEach count="numPRGs">
+            <layers>2</layers>
+            <pmIdx>2</pmIdx>
+            <ForEach count="trp">
+              <ForEach count="digBFInterfaces">
+                <beamIdx>0</beamIdx>
+              </ForEach>
+            </ForEach>
+          </ForEach>
+        </PrecodingAndBeamformingRel16>
+        <powerControlOffsetProfileNR>0</powerControlOffsetProfileNR>
+        <powerControlOffsetSSProfileNR>0</powerControlOffsetSSProfileNR>
+        <cbgReTxCtrl condition="pduBitmapBit1=1">
+          <isLastCbPresent>0</isLastCbPresent>
+          <isInlineTbCrcl>0</isInlineTbCrcl>
+          <dlTbCrcCW>0</dlTbCrcCW>
+        </cbgReTxCtrl>
+        <pdschMaintenanceFapiV3>
+          <pdschTransType>0</pdschTransType>
+          <coresetStartPoint>0</coresetStartPoint>
+          <initialDlBwpSize>0</initialDlBwpSize>
+          <ldpcBaseGraph>0</ldpcBaseGraph>
+          <tbSizeLbrmBytes>0</tbSizeLbrmBytes>
+          <tbCrcRequired>0</tbCrcRequired>
+          <ssbPdusForRateMatching>0</ssbPdusForRateMatching>
+          <ssbConfigForRateMatching>0</ssbConfigForRateMatching>
+          <prbSymRmPatternBitmapSizeByReference>0</prbSymRmPatternBitmapSizeByReference>
+          <prbSymRateMatchPatternBitmapByReference>0</prbSymRateMatchPatternBitmapByReference>
+          <numPrbSymRmPatternsByValue>0</numPrbSymRmPatternsByValue>
+          <ForEach count="numPrbSymRmPatternsByValue">
+            <freqDomainRB>0</freqDomainRB>
+            <symbolsInRB>0</symbolsInRB>
+          </ForEach>
+          <numCoresetRmPatterns>0</numCoresetRmPatterns>
+          <ForEach count="numCoresetRmPatterns">
+            <freqDomainResources>0</freqDomainResources>
+            <symbolsPattern>0</symbolsPattern>
+          </ForEach>
+          <pdcchPduIndex>0</pdcchPduIndex>
+          <dciIndex>0</dciIndex>
+          <lteCrsRateMatchPatternBitmapSize>0</lteCrsRateMatchPatternBitmapSize>
+          <lteCrsRateMatchPattern>0</lteCrsRateMatchPattern>
+          <numCsiRsForRateMatching>0</numCsiRsForRateMatching>
+          <csiRsForRateMatching>0</csiRsForRateMatching>
+          <pdschDmrsPowerOffsetProfileSSS>0</pdschDmrsPowerOffsetProfileSSS>
+          <pdschDataPowerOffsetProfileSSS>0</pdschDataPowerOffsetProfileSSS>
+          <cbgReTxCtrlL2Seg condition="pduBitmapBit1=1" and_condition="phySupportL2CbgSeg=1">
+            <maxNumCbgPerTb>0</maxNumCbgPerTb>
+            <ForEach count="codeword">
+              <cbgTxInformation>0</cbgTxInformation>
+            </ForEach>
+          </cbgReTxCtrlL2Seg>
+          <cbgReTxCtrlL1Seg condition="pduBitmapBit1=1" and_condition="phySupportL1CbgSeg=1">
+            <maxNumCbgPerTb>0</maxNumCbgPerTb>
+            <ForEach count="codeword">
+              <cbgTxInformation>0</cbgTxInformation>
+            </ForEach>
+          </cbgReTxCtrlL1Seg>
+        </pdschMaintenanceFapiV3>
+        <pdschPtrsMaintenanceFapiV3>
+          <pdschPtrsPowerOffsetProfileSSS>0</pdschPtrsPowerOffsetProfileSSS>
+        </pdschPtrsMaintenanceFapiV3>
+        <pdschParametersRel16FapiV3>
+          <repetitionScheme>0</repetitionScheme>
+          <pdschPtrs2 condition="pduBitmapBit1=1">
+            <ptrsPortIndex>0</ptrsPortIndex>
+            <ptrsTimeDensity>0</ptrsTimeDensity>
+            <ptrsFreqDensity>0</ptrsFreqDensity>
+            <ptrsReOffset>0</ptrsReOffset>
+            <nEpreRatioOfPDSCHToPTRSProfileNR>0</nEpreRatioOfPDSCHToPTRSProfileNR>
+          </pdschPtrs2>
+          <pdschPtrsV3 condition="pduBitmapBit1=1">
+            <pdschPtrsPowerOffsetProfileSSS>0</pdschPtrsPowerOffsetProfileSSS>
+          </pdschPtrsV3>
+        </pdschParametersRel16FapiV3>
+        <pdschParametersFapiV4>
+          <coresetRmPatternBitmapSizeByReference>0</coresetRmPatternBitmapSizeByReference>
+          <coresetRmPatternBitmapByReference>0,0</coresetRmPatternBitmapByReference>
+          <lteCrsMbsfnDerivationMethod>0</lteCrsMbsfnDerivationMethod>
+          <lteCrsMbsfnPattern>0,0</lteCrsMbsfnPattern>
+          <spatialStreamIndicesPresent>0</spatialStreamIndicesPresent>
+          <ForEach count="codeword">
+            <numLayersForCW>0</numLayersForCW>
+            <spatialStreamIndicesForCW>0,0</spatialStreamIndicesForCW>
+          </ForEach>
+        </pdschParametersFapiV4>
+      </PDU>
+    </MSG_PHY_DL_TTI_REQ>
+  </fapiMsg>
+  <fapiMsg>
+    <MSG_PHY_TX_DATA_REQ>
+      <PDU type="TXDATA">
+        <pduIndex>0</pduIndex>
+        <cwIndex>0</cwIndex>
+        <numTLV>1</numTLV>
+        <ForEach count="numTLV">
+          <tag>0</tag>
+          <length>4</length>
+          <value>12,24,36,48</value>
+        </ForEach>
+      </PDU>
+      <PDU type="TXDATA">
+        <pduIndex>1</pduIndex>
+        <cwIndex>0</cwIndex>
+        <numTLV>1</numTLV>
+        <ForEach count="numTLV">
+          <tag>1</tag>
+          <length>2</length>
+          <value>txdata0.dat</value>
+        </ForEach>
+      </PDU>
+    </MSG_PHY_TX_DATA_REQ>
+  </fapiMsg>
+  <fapiMsg>
+    <MSG_PHY_UL_DCI_REQ>
+      <PDU type="PDCCH">
+        <coresetBWPSize>273</coresetBWPSize>
+        <coresetBWPStart>0</coresetBWPStart>
+        <subcarrierSpacing>1</subcarrierSpacing>
+        <cyclicPrefix>0</cyclicPrefix>
+        <startSymbolIndex>0</startSymbolIndex>
+        <durationSymbols>1</durationSymbols>
+        <freqDomainResource>0</freqDomainResource>
+        <cceRegMappingType>0</cceRegMappingType>
+        <regBundleSize>0</regBundleSize>
+        <interleaverSize>0</interleaverSize>
+        <coreSetType>0</coreSetType>
+        <shiftIndex>0</shiftIndex>
+        <precoderGranularity>0</precoderGranularity>
+        <numDlDci>1</numDlDci>
+        <ForEach count="numDlDci">
+          <rnti>100</rnti>
+          <nIdPdcchData>0</nIdPdcchData>
+          <nRntiPdcchData>0</nRntiPdcchData>
+          <cceIndex>0</cceIndex>
+          <aggregationLevel>4</aggregationLevel>
+          <PrecodingAndBeamforming condition="phyRel16Support=0">
+            <trpScheme>0</trpScheme>
+            <numPRGs>1</numPRGs>
+            <prgSize>0</prgSize>
+            <digBFInterfaces>1</digBFInterfaces>
+            <ForEach count="numPRGs">
+              <pmIdx>2</pmIdx>
+              <ForEach count="digBFInterfaces">
+                <beamIdx>0</beamIdx>
+              </ForEach>
+            </ForEach>
+          </PrecodingAndBeamforming>
+          <PrecodingAndBeamformingRel16 condition="phyRel16Support=1">
+            <trpScheme>1</trpScheme>
+            <numPRGs>1</numPRGs>
+            <prgSize>0</prgSize>
+            <digBFInterfaces>1</digBFInterfaces>
+            <ForEach count="numPRGs">
+              <layers>2</layers>
+              <pmIdx>2</pmIdx>
+              <ForEach count="trp">
+                <ForEach count="digBFInterfaces">
+                  <beamIdx>0</beamIdx>
+                </ForEach>
+              </ForEach>
+            </ForEach>
+          </PrecodingAndBeamformingRel16>
+          <TxGenPrecodingPdu condition="phyFapiV4MuMimoGroupSupport=1">
+            <trpScheme>0</trpScheme>
+            <numMuMimoGroups>1</numMuMimoGroups>
+            <ForEach count="numMuMimoGroups">
+              <muMimoGroupIdx>0</muMimoGroupIdx>
+            </ForEach>
+          </TxGenPrecodingPdu>
+          <beta_PDCCH_1_0>0</beta_PDCCH_1_0>
+          <powerControlOffsetSSProfileNR>0</powerControlOffsetSSProfileNR>
+          <payloadSizeBits>4</payloadSizeBits>
+          <payload>0x01,0x02,0x03,0x04</payload>
+        </ForEach>
+        <pdcchMaintenanceFapiV3>
+          <pdcchPduIndex>0</pdcchPduIndex>
+          <ForEach count="numDlDci">
+            <dciIndex>0</dciIndex>
+            <collocatedAl16Candidate>0</collocatedAl16Candidate>
+            <pdcchDmrsPowerOffsetProfileSSS>0</pdcchDmrsPowerOffsetProfileSSS>
+            <pdcchDataPowerOffsetProfileSSS>0</pdcchDataPowerOffsetProfileSSS>
+          </ForEach>
+        </pdcchMaintenanceFapiV3>
+        <pdcchParametersFapiV4>
+          <ForEach count="numDlDci">
+            <nIdPdcchDmrs>0</nIdPdcchDmrs>
+          </ForEach>
+          <spatialStreamIndicesPresent>1</spatialStreamIndicesPresent>
+          <ForEach count="numDlDci">
+            <dciIndex>0</dciIndex>
+            <spatialStreamIndex>0</spatialStreamIndex>
+          </ForEach>
+        </pdcchParametersFapiV4>
+      </PDU>
+    </MSG_PHY_UL_DCI_REQ>
+  </fapiMsg>
+  <fapiMsg>
+    <MSG_PHY_UL_TTI_REQ>
+    </MSG_PHY_UL_TTI_REQ>
+  </fapiMsg>
+</docRoot>

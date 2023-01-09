@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<docRoot>
+  <cellConfig cellIndex="0">
+    <fapiMsg>
+      <MSG_PHY_CONFIG_REQ>
+        <TLV tag="0x102a">
+          <phyProfileId>0</phyProfileId>
+        </TLV>
+        <TLV tag="0x102b">
+          <indicationInstancePerSlot>1,1,1,1,1,1</indicationInstancePerSlot>
+        </TLV>
+        <TLV tag="0x102c">
+          <requestInstancesPerSlot>1,1,1,1</requestInstancesPerSlot>
+        </TLV>
+        <TLV tag="0x103d">
+          <sfn>0</sfn>
+          <slot>0</slot>
+          <subcarrierSpacing>1</subcarrierSpacing>
+          <cyclicPrefixType>0</cyclicPrefixType>
+        </TLV>
+        <TLV tag="0x102d">
+          <dlBandwidth>100</dlBandwidth>
+          <dlFrequency>3568160</dlFrequency>
+          <dlk0>0,0,0,0,0</dlk0>
+          <dlGridSize>0,273,0,0,0</dlGridSize>
+          <numTxAnt>2</numTxAnt>
+          <uplinkBandwidth>100</uplinkBandwidth>
+          <uplinkFrequency>3568160</uplinkFrequency>
+          <ulk0>0,0,0,0,0</ulk0>
+          <ulGridSize>0,273,0,0,0</ulGridSize>
+          <numRxAnt>2</numRxAnt>
+          <frequencyShift7p5KHz>0</frequencyShift7p5KHz>
+          <powerProfile>0</powerProfile>
+          <powerOffsetRsIndex>0</powerOffsetRsIndex>
+        </TLV>
+        <TLV tag="0x100c">
+          <phyCellId>11</phyCellId>
+        </TLV>
+        <TLV tag="0x100d">
+          <frameDuplexType>1</frameDuplexType>
+        </TLV>
+        <TLV tag="0x102e">
+          <pdschTransTypeValidity>0</pdschTransTypeValidity>
+        </TLV>
+        <TLV tag="0x102f">
+          <puschTransTypeValidity>0</puschTransTypeValidity>
+        </TLV>
+        <TLV tag="0x100e">
+          <ssPbchPower>60</ssPbchPower>
+        </TLV>
+        <TLV tag="0x1030">
+          <ssPbchBlockPowerScaling>0</ssPbchBlockPowerScaling>
+        </TLV>
+        <TLV tag="0x100f">
+          <bchPayloadFlag>0</bchPayloadFlag>
+        </TLV>
+        <TLV tag="0x1031">
+          <prachResConfigIndex>0</prachResConfigIndex>
+          <prachSequenceLength>1</prachSequenceLength>
+          <prachSubCSpacing>1</prachSubCSpacing>
+          <ulBwpPuschScs>0</ulBwpPuschScs>
+          <restrictedSetConfig>0</restrictedSetConfig>
+          <numPrachFdOccasions>1</numPrachFdOccasions>
+          <prachConfigIndex>189</prachConfigIndex>
+          <prachFormat>7</prachFormat>
+          <numPrachTdOccasions>1</numPrachTdOccasions>
+          <numberOfPreambles>20</numberOfPreambles>
+          <startPreambleIndex>0</startPreambleIndex>
+          <ForEach count="numPrachFdOccasions">
+            <prachRootSequenceIndex>0</prachRootSequenceIndex>
+            <numRootSequences>2</numRootSequences>
+            <prachFrequencyOffset>0</prachFrequencyOffset>
+            <prachGuardBandOffset>0</prachGuardBandOffset>
+            <prachZeroCorrConf>2</prachZeroCorrConf>
+            <numUnusedRootSequences>1</numUnusedRootSequences>
+            <ForEach count="numUnusedRootSequences">
+              <unusedRootSequences>1</unusedRootSequences>
+            </ForEach>
+          </ForEach>
+          <ssbPerRach>1</ssbPerRach>
+        </TLV>
+        <TLV tag="0x1033">
+          <ssbConfigIndex>0</ssbConfigIndex>
+          <ssbOffsetPointA>0</ssbOffsetPointA>
+          <betaPssProfileNR>0</betaPssProfileNR>
+          <betaPssProfileSSS>0</betaPssProfileSSS>
+          <ssbPeriod>4</ssbPeriod>
+          <ssbSubcarrierOffset>0</ssbSubcarrierOffset>
+          <ssbFirstSymbolMappingCase>0</ssbFirstSymbolMappingCase>
+          <subcarrierSpacing>0</subcarrierSpacing>
+          <subCarrierSpacingCommon>1</subCarrierSpacingCommon>
+          <ssbMaskSize>2</ssbMaskSize>
+          <ssbMask>0,0</ssbMask>
+          <lMax>0</lMax>
+          <rmsiPresence>0</rmsiPresence>
+        </TLV>
+        <TLV tag="0x1035">
+          <tddPeriod>0</tddPeriod>
+          <slotConfig>00000000000000</slotConfig>
+        </TLV>
+        <TLV tag="0x1028">
+          <rssiMeasurement>1</rssiMeasurement>
+        </TLV>
+        <TLV tag="0x1040">
+          <rsrpMeasurement>1</rsrpMeasurement>
+        </TLV>
+        <TLV tag="0x103a">
+          <pdschCbgScheme>0</pdschCbgScheme>
+        </TLV>
+      </MSG_PHY_CONFIG_REQ>
+    </fapiMsg>
+    <testSetup>
+      <slotCountToRun>5</slotCountToRun>
+      <filenameDlIqRef>dl_iq_ref.data</filenameDlIqRef>
+      <filenameDlIqOutput>dl_iq_output.data</filenameDlIqOutput>
+      <filenameUlIqRef></filenameUlIqRef>
+      <filenameUlResultReq></filenameUlResultReq>
+      <filenameUlResultOutput></filenameUlResultOutput>
+      <slotTxCfg slotNum="0">txcfg_slot0.xml</slotTxCfg>
+      <slotTxCfg slotNum="1">txcfg_slot1.xml</slotTxCfg>
+      <slotTxCfg slotNum="2">txcfg_slot2.xml</slotTxCfg>
+      <slotTxCfg slotNum="3">txcfg_slot3.xml</slotTxCfg>
+      <slotTxCfg slotNum="4">txcfg_slot4.xml</slotTxCfg>
+    </testSetup>
+  </cellConfig>
+</docRoot>
